@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Vanilla Forecast</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <h1>Vanilla Forecast</h1>
+        <p>Weather in your city</p>
+      </header>
+      <form class="search-form" id="search-form">
+        <input
+          type="search"
+          placeholder="Enter a city.."
+          required
+          id="search-form-input"
+          class="search-form-input"
+        />
+        <input type="submit" value="Search" class="search-form-button" />
+      </form>
+
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1>Paris</h1>
+            <p>
+              Tuesday 14:49, scattered clouds
+              <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-icon">
+            <div>🌤️</div>
+            <div class="weather-app-temp">12</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        This was coded by
+        <a href="https://github.com/sparkle-ops" target="_blank"
+          >Fisiwe Sithole</a
+        >
+        open sourced on
+        <a
+          href="https://github.com/sparkle-ops/vanilla-forecast"
+          target="_blank"
+          >GitHub</a
+        >
+        and
+        <a href="https://vanilla-forecast.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
